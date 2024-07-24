@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackWise Search</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <h1>TRACKWISE search</h1>
+        <div class="loading-bar-container">
+            <div class="loading-bar" id="loading-bar"></div>
+        </div>
+        <img src="../static/img/image-logo.jpg" class="image-logo" alt="Top Left Image">
+        <div class="help-container">
+            <button class="help-button">USAGE</button>
+            <hr width="1" size="30" style="border-left: 1px solid white;">
+            <button class="optimization-button">HOW TO OPTIMIZE RESULTS</button>
+            <div class="tooltip"></div>
+            <button id="update-data-btn">Update Data</button>
+        </div>
+        <div class="loading-indicator"></div>
+        <div class="tab-container">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="qa"><span>QUERY</span></button>
+                <button class="tab-button" data-tab="data"><span>DATA</span></button>
+            </div>
+            <div id="qa-container" class="tab-content active">
+                <div id="chat-box">
+                    <div id="text-logo"></div>
+                </div>
+                <div class="input-container">
+                    <textarea id="user-input" rows="2" placeholder="Ask a question about the TrackWise data..."></textarea>
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+            <div id="data-container" class="tab-content">
+                <div class="input-container"></div>
+                <div id="sql-output">
+                    <h2>No query generated for data table yet...</h2>
+                    <button id="export-data-btn">Export Data</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.9/js/dataTables.responsive.min.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
