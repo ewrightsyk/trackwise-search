@@ -66,4 +66,4 @@ jobs:
         with:
           app-name: 'trackwise-test'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_167D2F38DC9142289D319EE7476086DD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_655E34AD30BC4813A69E0140EC00C140 }}
